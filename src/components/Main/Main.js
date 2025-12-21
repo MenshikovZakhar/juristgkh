@@ -2,6 +2,7 @@ import Header from '../Header/Header';
 import { Helmet } from 'react-v19-helmet-async';
 import Maintitle from './Main-title/Main-title';
 import Form from './Form/Form';
+import Services from './Services/Services';
 function Main({ onAppointment }) {
 
     return (
@@ -17,6 +18,7 @@ function Main({ onAppointment }) {
             <main className='content'>
                 <Maintitle />
                 <Form />
+                <Services />
             </main>
 
         </>
@@ -24,3 +26,4 @@ function Main({ onAppointment }) {
 }
 
 export default Main;
+
