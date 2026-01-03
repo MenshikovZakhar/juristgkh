@@ -1,3 +1,19 @@
+.content-center {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.content-title {
+    font-size: 35px;
+    color: rgba(27, 30, 57, .85);
+    padding-top: 50px;
+    text-align: center
+}
+
 .section--stages {
     position: relative;
     z-index: 1;
@@ -24,7 +40,7 @@
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+
     margin: 0;
     padding: 0;
 }
@@ -58,6 +74,12 @@
     padding-top: 30px;
 }
 
+.stages__content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    padding-top: 30px;
+}
 
 .stages__icon {
     position: relative;
@@ -87,6 +109,21 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 50px auto;
+}
+
+.stages__count {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: calc(50% - -60px);
+    width: 70px;
+    margin: 0;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    opacity: .2;
+    font-size: 54px;
+    font-weight: 700;
 }
 
 
