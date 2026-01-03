@@ -3,6 +3,7 @@ import { Helmet } from 'react-v19-helmet-async';
 import Maintitle from './Main-title/Main-title';
 import Form from './Form/Form';
 import Services from './Services/Services';
+import Orderwork from './Orderwork/Orderwork';
 function Main({ onAppointment }) {
 
     return (
@@ -11,6 +12,7 @@ function Main({ onAppointment }) {
                 <title></title>
                 <meta name="description" content="" />
                 <link rel="canonical" href="/" />
+
             </Helmet>
             <Header
 
@@ -19,6 +21,7 @@ function Main({ onAppointment }) {
                 <Maintitle />
                 <Form />
                 <Services />
+                < Orderwork />
             </main>
 
         </>

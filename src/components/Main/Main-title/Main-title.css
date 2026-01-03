@@ -43,35 +43,6 @@
     width: 100%;
 }
 
-.main-show-title {
-    transform: translateY(-300%);
-    animation: ani 2s forwards;
-}
-
-@keyframes ani {
-    0% {
-        transform: translateY(-300%);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-.main-show-text {
-    transform: translateY(300%);
-    animation: mani 2s forwards;
-}
-
-@keyframes mani {
-    0% {
-        transform: translateY(300%);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
 
 .description__text {
     font-size: 18px;

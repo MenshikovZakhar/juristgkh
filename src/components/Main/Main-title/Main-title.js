@@ -1,19 +1,50 @@
-
+import { motion } from 'framer-motion';
 import './Main-title.css';
+const titleAnimation = {
+    hidden: {
+        y: -500,
+        opacity: 0,
+
+    },
+    visible: custom => ({
+        y: 0,
+        opacity: 1,
+        transition: { delay: custom * 0.2, duration: 2 },
+        duration: 1,
+    }),
+}
+
+const textAnimation = {
+    hidden: {
+        y: 500,
+        opacity: 0,
+
+    },
+    visible: custom => ({
+        y: 0,
+        opacity: 1,
+        transition: { delay: custom * 0.2, duration: 2 },
+        duration: 1,
+    }),
+}
 
 function Maintitle() {
     return (
 
-        <section className="main-title">
+        <motion.section
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.2, once: true }}
+            className="main-title">
             <div className="main-title__description">
-                <div className="main-title__description-title main-show-title">
+                <motion.div custom={1} variants={titleAnimation} className="main-title__description-title">
                     <h1 className="description__title">«Юридическая помощь в сфере ЖКХ для физических и юридических лиц»
                     </h1>
                     <button className="main-title__btn" type="button">
                         <span className="btn__text">Получить консультацию</span>
                     </button>
-                </div>
-                <div className="main-title__description-text main-show-text">
+                </motion.div>
+                <motion.div custom={2} variants={textAnimation} className="main-title__description-text">
                     <div className="main-title__text">
                         <p className="description__text">Если ваша квартира пострадала от затопления или вы столкнулись с
                             проблемами в отношениях с управляющей компанией, вы можете рассчитывать на профессиональную
@@ -34,9 +65,9 @@ function Maintitle() {
                             </li>
                         </ul>
                     </div>
-                </div>
+                </motion.div>
             </div>
-        </section>
+        </motion.section>
     )
 }
 
