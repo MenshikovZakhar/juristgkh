@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.198c56a6.css",
-    "main.js": "./static/js/main.b63e5a87.js",
+    "main.css": "./static/css/main.45e1c0f7.css",
+    "main.js": "./static/js/main.5f79f15f.js",
     "static/js/453.c15c5bf5.chunk.js": "./static/js/453.c15c5bf5.chunk.js",
     "static/media/logo.png": "./static/media/logo.99db9deb2e0acb924a02.png",
     "static/media/phone.png": "./static/media/phone.abcfa8a0b19c68081f40.png",
@@ -16,17 +16,19 @@
     "static/media/philosopher_bold_italic.woff2": "./static/media/philosopher_bold_italic.cfa382a94e0dfbad4a04.woff2",
     "static/media/pattern.png": "./static/media/pattern.4154df6403df7fe29b61.png",
     "static/media/img-3.png": "./static/media/img-3.9b90c4f0bdd4a7a7490c.png",
+    "static/media/up-button.svg": "./static/media/up-button.2cbee299861e002a1896.svg",
     "static/media/arrow-down-black.svg": "./static/media/arrow-down-black.68d6419e8bf18dd8740c.svg",
     "static/media/arrow-down-white.svg": "./static/media/arrow-down-white.4961f0b297d15a49c7ef.svg",
     "static/media/arrow-next-white.svg": "./static/media/arrow-next-white.3a540e0b8a96627c0371.svg",
     "index.html": "./index.html",
     "static/media/menu.svg": "./static/media/menu.111cfc3a3545a9ff785c.svg",
-    "main.198c56a6.css.map": "./static/css/main.198c56a6.css.map",
-    "main.b63e5a87.js.map": "./static/js/main.b63e5a87.js.map",
+    "static/media/close.svg": "./static/media/close.ad98de32e342afafa118.svg",
+    "main.45e1c0f7.css.map": "./static/css/main.45e1c0f7.css.map",
+    "main.5f79f15f.js.map": "./static/js/main.5f79f15f.js.map",
     "453.c15c5bf5.chunk.js.map": "./static/js/453.c15c5bf5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.198c56a6.css",
-    "static/js/main.b63e5a87.js"
+    "static/css/main.45e1c0f7.css",
+    "static/js/main.5f79f15f.js"
   ]
 }
