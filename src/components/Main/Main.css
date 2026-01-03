@@ -1,0 +1,19 @@
+.scrolltop {
+    background-image: url(../../images/up-button.svg);
+    background-size: cover;
+
+}
+
+.scroll-to-top {
+    background-color: rgba(27, 30, 57, .85);
+    right: 40px;
+    bottom: 40px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 7px;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 9px 25px 0 rgb(132 128 177 / 28%);
+    border: none;
+}

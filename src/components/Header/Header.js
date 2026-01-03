@@ -19,7 +19,7 @@ function Header({ onAppointment }) {
                 </a>
                 <Navigation />
             </div>
-            <button className="btn" type="button">
+            <button onClick={onAppointment} type="button" className="btn">
                 <span className="btn__text">Заказать звонок</span>
             </button>
         </header>
