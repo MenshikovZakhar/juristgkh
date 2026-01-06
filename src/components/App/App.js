@@ -16,7 +16,7 @@ function App() {
   return (
     <div className='page'>
       <Routes>
-        <Route path="/" element={<Main onAppointment={handleAppointment} />} />
+        <Route path="/" element={<Main onAppointment={handleAppointment} onClose={closePopupsMessage} />} />
       </Routes>
       <CallPopup
         isOpen={isAppointmentpOpen}

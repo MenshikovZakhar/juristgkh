@@ -60,7 +60,7 @@
 }
 
 .footer-form__btn {
-    text-align: left;
+    text-align: center;
 }
 
 .footer-list__sub {
@@ -346,7 +346,7 @@
 }
 
 .footer-form {
-    padding: 40px;
+    padding: 0px 40px;
     background-color: #fff;
     -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .1);
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .1);
@@ -400,11 +400,30 @@
 }
 
 .form__close {
-
+    position: absolute;
+    top: 5px;
+    right: 10px;
     cursor: pointer;
-    width: 20px;
-    height: 20px;
-    background-image: url(../../images/close-2.svg);
+    width: 30px;
+    height: 30px;
+    background-image: url(../../images/close-2.png);
     background-color: unset;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+}
 
+
+.btn__text_disabled {
+    background-image: linear-gradient(to left, rgba(235, 235, 235, 0.85), rgba(235, 235, 235, 0.85));
+    position: relative;
+    z-index: 1;
+    display: block;
+    padding: 20px 20px;
+    padding-right: 70px;
+    color: #7e7e7e !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto, cover;
 }

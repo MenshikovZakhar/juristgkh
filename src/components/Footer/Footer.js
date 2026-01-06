@@ -19,6 +19,7 @@ function Footer({ onClose }) {
         name: '',
         phone: '',
         message: '',
+        email: '',
     });
     const [errors, setErrors] = useState({});
     const [isFormValid, setIsFormValid] = useState(false);
@@ -38,11 +39,13 @@ function Footer({ onClose }) {
                 console.log('SUCCESS!', response.status, response.text);
                 setMessageAcceptAuth(SAVE_MOVIE_MESSAGE);
                 setImgAcceptAuth(success);
+
             })
             .catch((err) => {
                 console.log('FAILED...', err);
                 setMessageAcceptAuth(NOT_FOUND_MESSAGE);
                 setImgAcceptAuth(error);
+
             });
 
         setToSend('');
@@ -74,163 +77,168 @@ function Footer({ onClose }) {
     }, [setIsLoading]);
 
     return (
-
-        <div onMouseDown={handleMouseDown}>
-            {isEmailjsOpen ? (<div className="emailjs__message"> <h2 className='emailjs__title_2'>{messageAcceptAuth}</h2>
-                {isLoading ? null :
-                    <Preloader />
-                }
-                <img onLoad={() => setIsLoading(true)} style={isLoading ? {} : { display: 'none' }} className="info-image" src={imgAcceptAuth} alt="Отправках" /></div>) :
-                (
-                    <footer className="site-footer">
-                        <section className="footer-info">
-                            <div className="container">
-                                <div className="footer-info__content">
-                                    <h3 className="footer-info__title">Свяжитесь с нами любым удобным для Вас способом</h3>
+        <footer >
+            <div onMouseDown={handleMouseDown}>
+                {isEmailjsOpen ? (<div className="emailjs__message"> <h2 className='emailjs__title_2'>{messageAcceptAuth}</h2>
+                    {isLoading ? null :
+                        <Preloader />
+                    }
+                    <button
+                        onLoad={() => setIsLoading(true)} style={isLoading ? {} : { display: 'none' }}
+                        aria-label='Close'
+                        className='form__close'
+                        type='button'
+                        onClick={() => { setToSend(''); setEmailjsOpen(false); onClose(false) }}
+                    ></button>
+                    <img onLoad={() => setIsLoading(true)} style={isLoading ? {} : { display: 'none' }} className="info-image" src={imgAcceptAuth} alt="Отправка" /></div>) :
+                    (
+                        <div className="site-footer">
+                            <section className="footer-info">
+                                <div className="container">
+                                    <div className="footer-info__content">
+                                        <h3 className="footer-info__title">Свяжитесь с нами любым удобным для Вас способом</h3>
+                                    </div>
                                 </div>
-                            </div>
-                        </section>
-                        <section className="section footer-top">
-                            <div className="container">
-                                <ul className="footer-list">
-                                    <li className="footer-list__item footer-list__item--contacts">
-                                        <h2 className="content-title content-title--left footer-list__title">Контактная информация</h2>
-                                        <ul className="footer-contacts">
-                                            <li className="footer-contacts__item">
-                                                <a href="https://t.me/@zm681986" className="footer-contacts__item" target="_blank" rel="noreferrer">
+                            </section>
+                            <section className="section footer-top">
+                                <div className="container">
+                                    <ul className="footer-list">
+                                        <li className="footer-list__item footer-list__item--contacts">
+                                            <h2 className="content-title content-title--left footer-list__title">Контактная информация</h2>
+                                            <ul className="footer-contacts">
+                                                <li className="footer-contacts__item">
+                                                    <a href="https://t.me/@zm681986" className="footer-contacts__item" target="_blank" rel="noreferrer">
 
-                                                    <div className="contacts-link contacts-link--adress">
-                                                        <div className="contacts-link__name">Мессенджер</div>
-                                                        <div className="contacts-link__text">Telegram</div>
+                                                        <div className="contacts-link contacts-link--adress">
+                                                            <div className="contacts-link__name">Мессенджер</div>
+                                                            <div className="contacts-link__text">Telegram</div>
+                                                        </div>
+
+                                                    </a>
+                                                </li>
+                                                <li className="footer-contacts__item">
+                                                    <a href="tel:89507357984" className="footer-contacts__item" target="_blank" rel="noreferrer">
+                                                        <div className="contacts-link contacts-link--phone">
+                                                            <div className="contacts-link__name">Телефон</div>
+                                                            <a className="contacts-link__number" href="tel:89507357984">+7(950) 735-79-84</a>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li className="footer-contacts__item">
+                                                    <div className="contacts-link contacts-link--email">
+                                                        <div className="contacts-link__name">E-mail</div>
+                                                        <a className="contacts-link__text" href="mailto:zm681986@mail.ru">zm681986@mail.ru</a>
                                                     </div>
-
-                                                </a>
-                                            </li>
-                                            <li className="footer-contacts__item">
-                                                <a href="tel:89507357984" className="footer-contacts__item" target="_blank" rel="noreferrer">
-                                                    <div className="contacts-link contacts-link--phone">
-                                                        <div className="contacts-link__name">Телефон</div>
-                                                        <a className="contacts-link__number" href="tel:89507357984">+7(950) 735-79-84</a>
+                                                </li>
+                                                <li className="footer-contacts__item">
+                                                    <div className="contacts-link contacts-link--time">
+                                                        <div className="contacts-link__name">Режим работы</div>
+                                                        <div className="contacts-link__text">Пн-Пт с 10:00 до 21:00 Сб-Вс с 10:00 до 20:00 (по предварительной записи)</div>
                                                     </div>
-                                                </a>
-                                            </li>
-                                            <li className="footer-contacts__item">
-                                                <div className="contacts-link contacts-link--email">
-                                                    <div className="contacts-link__name">E-mail</div>
-                                                    <a className="contacts-link__text" href="mailto:zm681986@mail.ru">zm681986@mail.ru</a>
-                                                </div>
-                                            </li>
-                                            <li className="footer-contacts__item">
-                                                <div className="contacts-link contacts-link--time">
-                                                    <div className="contacts-link__name">Режим работы</div>
-                                                    <div className="contacts-link__text">Пн-Пт с 10:00 до 21:00 Сб-Вс с 10:00 до 20:00 (по предварительной записи)</div>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                                </li>
+                                            </ul>
 
 
-                                    </li>
-                                    <li className="footer-list__item">
-                                        <div className="footer-form">
-                                            <h2 className="content-title footer-form__title">Оставить заявку</h2>
-                                            <form onSubmit={onSubmit} className="appointment-form appointment-form__content">
-                                                <ul className="appointment-form__list">
-                                                    <li className="appointment-form__item">
-                                                        <div className="appointment-form__control">
-                                                            <label className="appointment-form__label">Ваше имя <span className="appointment-form__required">*</span></label>
-                                                            <input
-                                                                className="appointment-form__input"
-                                                                type="text"
-                                                                name="name"
-                                                                title="Допускаются только буквы русского алфавита"
-                                                                placeholder="ФИО или имя"
-                                                                value={toSend.name || ''}
-                                                                onChange={handleChange}
-                                                                pattern="[а-яА-Яa-zA-ZёË\- ]{2,}"
-                                                                required />
-                                                            <span className="register__error auth__error">{errors.name}</span>
-                                                        </div>
-                                                        <div className="appointment-form__control">
-                                                            <label className="appointment-form__label">Контактный телефон <span className="appointment-form__required">*</span></label>
-                                                            <input
+                                        </li>
+                                        <li className="footer-list__item">
+                                            <div className="footer-form">
+                                                <h2 className="content-title footer-form__title">Оставить заявку</h2>
+                                                <form onSubmit={onSubmit} className="appointment-form appointment-form__content">
+                                                    <ul className="appointment-form__list">
+                                                        <li className="appointment-form__item">
+                                                            <div className="appointment-form__control">
+                                                                <label className="appointment-form__label">Ваше имя <span className="appointment-form__required">*</span></label>
+                                                                <input
+                                                                    className="appointment-form__input"
+                                                                    type="text"
+                                                                    name="name"
+                                                                    title="Допускаются только буквы русского алфавита"
+                                                                    placeholder="ФИО или имя"
+                                                                    value={toSend.name || ''}
+                                                                    onChange={handleChange}
+                                                                    pattern="[а-яА-Яa-zA-ZёË\- ]{2,}"
+                                                                    required />
+                                                                <span className="register__error auth__error">{errors.name}</span>
+                                                            </div>
+                                                            <div className="appointment-form__control">
+                                                                <label className="appointment-form__label">Контактный телефон <span className="appointment-form__required">*</span></label>
+                                                                <input
 
-                                                                type="tel"
-                                                                name='phone'
-                                                                placeholder='Введите Ваш телефон'
-                                                                value={toSend.phone || ''}
-                                                                onChange={handleChange}
-                                                                pattern="^((8|\+7)[\- ]?)?\(?\d{3,5}\)?[\- ]?\d{1}[\- ]?\d{1}[\- ]?\d{1}[\- ]?\d{1}[\- ]?\d{1}(([\- ]?\d{1})?[\- ]?\d{1})?$"
-                                                                required
-                                                                className="appointment-form__input appointment-form__input--tel"
-                                                            />
-                                                            <span className="register__error auth__error">{errors.phone}</span>
-                                                        </div>
-                                                        <div className="appointment-form__control">
-                                                            <label className="appointment-form__label">Е-mail <span className="appointment-form__required">*</span></label>
-                                                            <input
-                                                                className="appointment-form__input appointment-form__input--email"
-                                                                type="email" name="email" placeholder="example@example.com" required="" />
-                                                        </div>
-                                                    </li>
-                                                    <li className="appointment-form__item">
-                                                        <div className="appointment-form__control">
-                                                            <label className="appointment-form__label">Дополнительная информация</label>
-                                                            <textarea
-                                                                className="appointment-form__input appointment-form__input--text"
-                                                                type="text"
-                                                                name="info"
+                                                                    type="tel"
+                                                                    name='phone'
+                                                                    placeholder='Введите Ваш телефон'
+                                                                    value={toSend.phone || ''}
+                                                                    onChange={handleChange}
+                                                                    pattern="^((8|\+7)[\- ]?)?\(?\d{3,5}\)?[\- ]?\d{1}[\- ]?\d{1}[\- ]?\d{1}[\- ]?\d{1}[\- ]?\d{1}(([\- ]?\d{1})?[\- ]?\d{1})?$"
+                                                                    required
+                                                                    className="appointment-form__input appointment-form__input--tel"
+                                                                />
+                                                                <span className="register__error auth__error">{errors.phone}</span>
+                                                            </div>
+                                                            <div className="appointment-form__control">
+                                                                <label className="appointment-form__label">Е-mail <span className="appointment-form__required">*</span></label>
+                                                                <input
+                                                                    className="appointment-form__input appointment-form__input--email"
+                                                                    type="email"
+                                                                    name="email"
+                                                                    placeholder="example@example.com"
+                                                                    required
+                                                                    value={toSend.email || ''}
+                                                                    onChange={handleChange}
+                                                                    pattern="^\S+@\S+.\S+$"
+                                                                />
+                                                                <span className="register__error auth__error">{errors.email}</span>
+                                                            </div>
+                                                        </li>
+                                                        <li className="appointment-form__item">
+                                                            <div className="appointment-form__control">
+                                                                <label className="appointment-form__label">Дополнительная информация</label>
+                                                                <textarea
+                                                                    className="appointment-form__input appointment-form__input--text"
+                                                                    type="text"
+                                                                    name="info"
+                                                                />
+                                                            </div>
+                                                            <div class="footer-form__btn">
+                                                                <button
+                                                                    type="submit"
+                                                                    disabled={!isFormValid}
+                                                                    className={`btn appointment-form__btn ${isFormValid ? '' : 'appointment-form__btn_disabled'}`}>
+                                                                    <span className={` register__submit-button btn__text ${isFormValid ? '' : 'btn__text_disabled'}`}>Отправить</span>
+                                                                </button>
+                                                            </div>
+                                                            <div className="footer-form__outro"><span className="appointment-form__required">*</span> - поля обязательные для заполнения</div>
+                                                        </li>
+                                                    </ul>
+                                                </form>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <div className="page-contacts">
 
-
-                                                            />
-                                                        </div>
-
-                                                        <div className="footer-form__btn">
-                                                            <button
-                                                                type="submit"
-
-                                                                disabled={!isFormValid}
-                                                                className={`register__submit-button auth__submit-button ${isFormValid ? '' : 'auth__submit-button_disabled'}`}>
-                                                                <span className="btn__text">Отправить</span>
-                                                            </button>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </form>
-                                            <div className="footer-form__outro"><span className="appointment-form__required">*</span> - поля обязательные для заполнения</div>
-                                        </div>
-                                    </li>
-                                </ul>
                             </div>
-                        </section>
-                        <div className="page-contacts">
-
+                            <section className="footer-bottom">
+                                <div className="container">
+                                    <div className="footer-bottom__left">
+                                        <div className="copy">© 2026 «ПравоЖКХ»</div>
+                                    </div>
+                                    <div className="footer-bottom__center">
+                                        <a className="privacy" href="/privacy/" target="_blank">Политика конфиденциальности</a>
+                                    </div>
+                                    <div className="footer-bottom__right">
+                                        <div className="orvin"><a href="https://orvin.ru/" target="_blank">Создание сайта</a> - Орвин</div>
+                                        <a className="up-button scrolling" href="#page"></a>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
-                        <section className="footer-bottom">
-                            <div className="container">
-                                <div className="footer-bottom__left">
-                                    <div className="copy">© 2026 «ПравоЖКХ»</div>
-                                </div>
-                                <div className="footer-bottom__center">
-                                    <a className="privacy" href="/privacy/" target="_blank">Политика конфиденциальности</a>
-                                </div>
-                                <div className="footer-bottom__right">
-                                    <div className="orvin"><a href="https://orvin.ru/" target="_blank">Создание сайта</a> - Орвин</div>
-                                    <a className="up-button scrolling" href="#page"></a>
-                                </div>
-                            </div>
-                        </section>
-                    </footer>
-                )
-            }
+                    )
+                }
+            </div>
+        </footer>
 
-            <button
-                aria-label='Close'
-                className='form__close'
-                type='button'
-                onClick={() => { setToSend(''); setEmailjsOpen(false); onClose(false) }}
-            ></button>
-
-        </div>
     );
 }
 

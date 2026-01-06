@@ -7,7 +7,7 @@ import Services from './Services/Services';
 import Orderwork from './Orderwork/Orderwork';
 import ScrollToTop from "react-scroll-to-top";
 import './Main.css';
-function Main({ onAppointment }) {
+function Main({ onAppointment, onClose }) {
 
     return (
         <>
@@ -27,7 +27,7 @@ function Main({ onAppointment }) {
                 <Services />
                 < Orderwork />
             </main>
-            <Footer />
+            <Footer onClose={onClose} />
         </>
     );
 }

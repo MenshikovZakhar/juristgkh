@@ -93,6 +93,7 @@
     margin: 100px auto;
     min-height: 200px;
     border-radius: 20px;
+    position: relative;
 }
 
 .emailjs__textarea {

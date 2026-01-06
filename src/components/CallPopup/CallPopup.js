@@ -43,6 +43,7 @@ function CallPopup({ isOpen, onClose, }) {
                 console.log('FAILED...', err);
                 setMessageAcceptAuth(NOT_FOUND_MESSAGE);
                 setImgAcceptAuth(error);
+
             });
 
         setToSend('');
@@ -122,6 +123,7 @@ function CallPopup({ isOpen, onClose, }) {
                 aria-label='Close'
                 className='emailjs__close'
                 type='button'
+
                 onClick={() => { setToSend(''); setEmailjsOpen(false); onClose(false) }}
             ></button>
 
