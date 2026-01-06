@@ -50,18 +50,18 @@ function Maintitle() {
                             проблемами в отношениях с управляющей компанией, вы можете рассчитывать на профессиональную
                             юридическую помощь. </p>
                         <p className="description__text"> Я помогу вам:</p>
-                        <ul class="description__text-list">
-                            <li class="description__text-item">
-                                <p class="description__text">Оценить и взыскать ущерб с виновной стороны</p>
+                        <ul className="description__text-list">
+                            <li className="description__text-item">
+                                <p className="description__text">Оценить и взыскать ущерб с виновной стороны</p>
                             </li>
-                            <li class="description__text-item">
-                                <p class="description__text">Подготовить и подать все необходимые документы</p>
+                            <li className="description__text-item">
+                                <p className="description__text">Подготовить и подать все необходимые документы</p>
                             </li>
-                            <li class="description__text-item">
-                                <p class="description__text">Добиться справедливого решения в суде;</p>
+                            <li className="description__text-item">
+                                <p className="description__text">Добиться справедливого решения в суде;</p>
                             </li>
-                            <li class="description__text-item">
-                                <p class="description__text">Решить споры с ЖКХ без лишних проблем</p>
+                            <li className="description__text-item">
+                                <p className="description__text">Решить споры с ЖКХ без лишних проблем</p>
                             </li>
                         </ul>
                     </div>

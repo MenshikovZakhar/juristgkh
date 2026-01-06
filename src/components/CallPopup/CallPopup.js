@@ -80,52 +80,78 @@ function CallPopup({ isOpen, onClose, }) {
                 {isLoading ? null :
                     <Preloader />
                 }
+                <button
+                    onLoad={() => setIsLoading(true)} style={isLoading ? {} : { display: 'none' }}
+                    aria-label='Close'
+                    className='form__close'
+                    type='button'
+                    onClick={() => { setToSend(''); setEmailjsOpen(false); onClose(false) }}
+                ></button>
                 <img onLoad={() => setIsLoading(true)} style={isLoading ? {} : { display: 'none' }} className="info-image" src={imgAcceptAuth} alt="Отправках" /></div>) :
-                (<div className="emailjs">
-                    <h2 className='emailjs__title'>Оставьте Вашу заявку.</h2>
-                    <p className='emailjs__text'>Я свяжусь с Вами в ближайшее время.</p>
-                    <form onSubmit={onSubmit} className="emailjs__form">
-                        <input
-                            className='emailjs__input'
-                            type='text'
-                            name='name'
-                            placeholder='Введите Ваше Имя'
-                            value={toSend.name || ''}
-                            onChange={handleChange}
-                            pattern="[а-яА-Яa-zA-ZёË\- ]{2,}"
-                            required
-                        />
-                        <span className="register__error auth__error">{errors.name}</span>
+                (
 
-                        <input
-                            className='emailjs__input'
-                            type="tel"
-                            name='phone'
-                            placeholder='Введите Ваш телефон'
-                            value={toSend.phone || ''}
-                            onChange={handleChange}
-                            pattern="^((8|\+7)[\- ]?)?\(?\d{3,5}\)?[\- ]?\d{1}[\- ]?\d{1}[\- ]?\d{1}[\- ]?\d{1}[\- ]?\d{1}(([\- ]?\d{1})?[\- ]?\d{1})?$"
-                            required
-                        />
-                        <span className="register__error auth__error">{errors.phone}</span>
+                    <div className="modal-form__content">
+                        <h2 className="modal-form__title">Заказать звонок</h2>
+                        <button
+                            type="button"
+                            className="modal-form__close"
+                            aria-label="Close"
+                            onClick={() => { setToSend(''); setEmailjsOpen(false); onClose(false) }}>
+                        </button>
+                        <form onSubmit={onSubmit} className="appointment-form appointment-form__content">
+                            <ul className="appointment-form__list">
+                                <li className="appointment-form__item">
+                                    <div className="appointment-form__control">
+                                        <label className="appointment-form__label">Ваше имя <span className="appointment-form__required">*</span></label>
+                                        <input
+                                            className="appointment-form__input"
+                                            type="text"
+                                            name="name"
+                                            title="Допускаются только буквы русского алфавита"
+                                            placeholder="ФИО или имя"
+                                            value={toSend.name || ''}
+                                            onChange={handleChange}
+                                            pattern="[а-яА-Яa-zA-ZёË\- ]{2,}"
+                                            required />
+                                        <span className="register__error auth__error">{errors.name}</span>
+                                    </div>
+                                    <div className="appointment-form__control">
+                                        <label className="appointment-form__label">Контактный телефон <span className="appointment-form__required">*</span></label>
+                                        <input
 
-                        <button disabled={!isFormValid} type="submit"
-                            className={`register__submit-button auth__submit-button ${isFormValid ? '' : 'auth__submit-button_disabled'}`}>
-                            Отправить</button>
+                                            type="tel"
+                                            name='phone'
+                                            placeholder='Введите Ваш телефон'
+                                            value={toSend.phone || ''}
+                                            onChange={handleChange}
+                                            pattern="^((8|\+7)[\- ]?)?\(?\d{3,5}\)?[\- ]?\d{1}[\- ]?\d{1}[\- ]?\d{1}[\- ]?\d{1}[\- ]?\d{1}(([\- ]?\d{1})?[\- ]?\d{1})?$"
+                                            required
+                                            className="appointment-form__input appointment-form__input--tel"
+                                        />
+                                        <span className="register__error auth__error">{errors.phone}</span>
+                                    </div>
 
+                                </li>
+                                <li className="appointment-form__item">
 
-                    </form>
+                                    <div class="footer-form__btn">
+                                        <button
+                                            type="submit"
+                                            disabled={!isFormValid}
+                                            className={`btn appointment-form__btn ${isFormValid ? '' : 'appointment-form__btn_disabled'}`}>
+                                            <span className={` register__submit-button btn__text ${isFormValid ? '' : 'btn__text_disabled'}`}>Отправить</span>
+                                        </button>
+                                    </div>
+                                    <div className="footer-form__outro"><span className="appointment-form__required">*</span> - поля обязательные для заполнения</div>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
 
-                </div>)
+                )
             }
 
-            <button
-                aria-label='Close'
-                className='emailjs__close'
-                type='button'
 
-                onClick={() => { setToSend(''); setEmailjsOpen(false); onClose(false) }}
-            ></button>
 
         </div>
     );

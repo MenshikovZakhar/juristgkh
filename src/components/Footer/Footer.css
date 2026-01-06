@@ -427,3 +427,59 @@
     background-position: center center;
     background-size: auto, cover;
 }
+
+.footer-bottom,
+.footer-bottom__left,
+.footer-bottom__right {
+    text-align: center;
+}
+
+.footer-bottom .container {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+}
+
+.footer-bottom__left {
+    align-items: center;
+    margin: 0;
+    padding: 10px 0px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    color: #767888;
+}
+
+.footer-bottom__center {
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.footer-bottom__right {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+}
+
+.footer-bottom {
+    position: relative;
+    z-index: 1;
+    padding: 10px 0;
+}
+
+.footer-bottom::before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: -o-linear-gradient(right, rgba(0, 0, 0, .05), rgba(0, 0, 0, .05)), url("../../images/texture.jpg");
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, .05)), to(rgba(0, 0, 0, .05))), url("../../imagestexture.jpg");
+    background-image: linear-gradient(to left, rgba(0, 0, 0, .05), rgba(0, 0, 0, .05)), url("../../images/texture.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto, cover;
+}

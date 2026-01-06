@@ -1,8 +1,7 @@
 import './Footer.css'
-import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { send } from 'emailjs-com';
-import classNames from 'classnames';
+
 import { Preloader } from '../Preloader/Preloader';
 import {
     NOT_FOUND_MESSAGE,
@@ -216,22 +215,13 @@ function Footer({ onClose }) {
                                     </ul>
                                 </div>
                             </section>
-                            <div className="page-contacts">
 
-                            </div>
                             <section className="footer-bottom">
-                                <div className="container">
-                                    <div className="footer-bottom__left">
-                                        <div className="copy">© 2026 «ПравоЖКХ»</div>
-                                    </div>
-                                    <div className="footer-bottom__center">
-                                        <a className="privacy" href="/privacy/" target="_blank">Политика конфиденциальности</a>
-                                    </div>
-                                    <div className="footer-bottom__right">
-                                        <div className="orvin"><a href="https://orvin.ru/" target="_blank">Создание сайта</a> - Орвин</div>
-                                        <a className="up-button scrolling" href="#page"></a>
-                                    </div>
+
+                                <div className="footer-bottom__left">
+                                    <div className="copy">© 2026 jurist-gkh.ru</div>
                                 </div>
+
                             </section>
                         </div>
                     )
