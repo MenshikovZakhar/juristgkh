@@ -26,9 +26,8 @@ function Main({ onAppointment }) {
                 <Form />
                 <Services />
                 < Orderwork />
-                <Footer />
             </main>
-
+            <Footer />
         </>
     );
 }

@@ -49,13 +49,8 @@
     width: 50%;
 }
 
-.appointment-form__item:first-child {
-    padding-right: 10px;
-}
 
-.appointment-form__item:last-child {
-    padding-left: 10px;
-}
+
 
 .footer-form .appointment-form__privacy {
     justify-content: flex-start;
@@ -348,4 +343,68 @@
 .contacts-link__number {
     font-size: 1.2rem;
     font-weight: 700;
+}
+
+.footer-form {
+    padding: 40px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .1);
+}
+
+.appointment-form__item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 80%;
+}
+
+.appointment-form__control {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.appointment-form__label {
+    margin-bottom: 5px;
+}
+
+.appointment-form__input {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 15px 20px !important;
+    cursor: text;
+    color: #2c2c2c !important;
+    border: 1px solid transparent;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, .11) !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.appointment-form__required {
+    color: #1b1e39;
+}
+
+.footer-form__outro {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.appointment-form__list {
+    margin: 0;
+    padding: 0;
+}
+
+.form__close {
+
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-image: url(../../images/close-2.svg);
+    background-color: unset;
+
 }
