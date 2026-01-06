@@ -66,8 +66,5 @@ function AboutMe({ onAppointment, onClose }) {
             <Footer onClose={onClose} />
         </>
     );
-
-
-
 }
 export default AboutMe;

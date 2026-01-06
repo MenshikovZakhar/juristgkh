@@ -46,16 +46,21 @@ function Navigation() {
                             <li class="main-nav__item"><Link className="main-nav__link" to="/services_1">Оспаривание результатов ОСС</Link></li>
                         </ul>
                     </li>
+                    <li className="main-nav__item main-nav__item--parent">
+                        <NavLink
+                            className={({ isActive }) =>
+                                isActive ? 'main-nav__link main-nav__link--active' : 'main-nav__link'
 
+                            } to='/servicesjuridical'>Услуги для юридических лиц
 
-                    <NavLink className="main-nav__item main-nav__item--parent"><p className="main-nav__link">Услуги для юридических лиц</p>
+                        </NavLink>
                         <ul class="main-nav__sub main-nav__sub--dropdown">
                             <li class="main-nav__item"><Link className="main-nav__link" to="/services_1">Абоненсткое обслуживание</Link></li>
                             <li class="main-nav__item"><Link className="main-nav__link" to="/services_1">Взыскание задолженности за ЖКУ и капитальный ремонт</Link></li>
                             <li class="main-nav__item"><Link className="main-nav__link" to="/services_1">Проведение общего собрания</Link></li>
                             <li class="main-nav__item"><Link className="main-nav__link" to="/services_1">Представление интересов в судах</Link></li>
                         </ul>
-                    </NavLink>
+                    </li>
 
                     <li className="main-nav__item">
                         <NavLink
