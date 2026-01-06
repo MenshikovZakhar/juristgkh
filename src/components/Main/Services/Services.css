@@ -370,3 +370,8 @@
     padding: 0px;
     text-align: center;
 }
+
+.main-services {
+    z-index: -1;
+    position: relative;
+}

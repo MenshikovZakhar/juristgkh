@@ -195,7 +195,7 @@
 
 .footer-info {
     position: relative;
-    z-index: 1;
+    z-index: -1;
     padding: 40px 0;
 }
 
@@ -492,4 +492,8 @@
 .contacts-link__name {
     font-size: 0.8rem;
     color: #7e7e7e;
+}
+
+.site-footer {
+    position: relative;
 }

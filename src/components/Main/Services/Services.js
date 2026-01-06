@@ -22,9 +22,7 @@ function Services() {
 
     return (
 
-        <section className="main-services">
-
-
+        <section>
             <h2 className="services__content-title">Виды юридических услуг</h2>
             <div className="nav nav-tabs tab-list">
 
