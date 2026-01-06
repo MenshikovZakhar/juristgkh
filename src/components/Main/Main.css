@@ -1,7 +1,8 @@
 .scrolltop {
     background-image: url(../../images/up-button.svg);
     background-size: cover;
-
+    width: 50px !important;
+    height: 50px !important;
 }
 
 .scroll-to-top {

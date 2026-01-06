@@ -5,6 +5,7 @@ import CallPopup from '../CallPopup/CallPopup';
 import OrderPopup from '../OrderPopup/OrderPopup';
 import AboutMe from '../AboutMe/AboutMe';
 import Contacts from '../Contacts/Contacts';
+import Servicesphysical from '../Servicesphysical/Servicesphysical';
 import { useState } from 'react';
 function App() {
   const [isAppointmentpOpen, setAppointmentpOpen] = useState(false);
@@ -28,6 +29,7 @@ function App() {
         <Route path="/" element={<Main onAppointmen={handleAppointmen} onAppointment={handleAppointment} onClose={closePopupsMessage} />} />
         <Route exact path='/about' element={<AboutMe onAppointment={handleAppointment} onClose={closePopupsMessage} />} />
         <Route exact path='/contacts' element={<Contacts onAppointment={handleAppointment} onClose={closePopupsMessage} />} />
+        <Route exact path='/servicesphysical' element={<Servicesphysical onAppointment={handleAppointment} onClose={closePopupsMessage} />} />
       </Routes>
       <CallPopup
         isOpen={isAppointmentpOpen}
