@@ -2,33 +2,52 @@ import Services__physical from './Services__physical';
 import Services__juridical from './Services__juridical';
 import './Services.css';
 import React, { useState } from 'react';
-
+import { NavLink, Link } from 'react-router-dom';
 function Services() {
+    const [isActive, setisActive] = useState(true)
+    const [Active, setActive] = useState(false)
     const [myBool, setmyBool] = useState(true);
     const onClickPhysicalMenu = () => {
         setmyBool(true);
+        setisActive(true);
+        setActive(false);
     };
 
     const onClickJuridicalMenu = () => {
         setmyBool(false);
+        setisActive(false);
+        setActive(true);
     };
+
+
     return (
 
         <section className="main-services">
-            <h2 className="main-services__title">Cпектр юридических услуг</h2>
-            <div className="main-services__menu">
-                <button onClick={onClickPhysicalMenu} className="main-nav__item main-nav__item--active" type="button">
-                    <span className="btn__text">Для физических лиц</span>
-                </button>
 
-                <button onClick={onClickJuridicalMenu} className="main-form__btn main-show-form" type="button">
-                    <span className="btn__text">Для юридических лиц</span>
-                </button>
+
+            <h2 className="text-center">Виды юридических услуг</h2>
+            <div className="nav nav-tabs tab-list">
+
+                <li className="nav-item tab-list__item">
+                    <button
+                        onClick={onClickPhysicalMenu}
+                        className={isActive ? 'nav-link tab-list__link active' : 'nav-link tab-list__link'}
+                    >
+                        Услуги для физических лиц</button>
+                </li>
+
+                <li className="nav-item tab-list__item">
+                    <button onClick={onClickJuridicalMenu}
+                        className={Active ? 'nav-link tab-list__link active' : 'nav-link tab-list__link'}
+                    >Услуги для юридических лиц</button>
+                </li>
+
             </div>
             {myBool ? <Services__physical /> : <Services__juridical />}
         </section>
 
+
+
     )
 }
-
 export default Services;

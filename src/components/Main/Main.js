@@ -23,8 +23,8 @@ function Main({ onAppointment, onClose, onAppointmen }) {
             <main className='content'>
                 <ScrollToTop smooth className="scrolltop" viewBox="0 0 24 24" />
                 <Maintitle onAppointmen={onAppointmen} />
-                <Form />
                 <Services />
+                <Form onAppointmen={onAppointmen} />
                 < Orderwork />
             </main>
             <Footer onClose={onClose} />

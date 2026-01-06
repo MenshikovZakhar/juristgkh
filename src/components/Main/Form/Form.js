@@ -16,7 +16,7 @@ const Animation = {
 }
 
 
-function Form() {
+function Form({ onAppointmen }) {
     return (
 
         <motion.section
@@ -29,7 +29,7 @@ function Form() {
                 </p>
                 <p className="main-form__description-text"> Оставьте заявку и мы обязательно Вам поможем!</p>
             </motion.div>
-            <motion.button custom={2} className="main-form__btn" type="button" variants={Animation}>
+            <motion.button onClick={onAppointmen} custom={2} className="main-form__btn" type="button" variants={Animation}>
                 <span className="btn__text">Оставить заявку</span>
             </motion.button>
         </motion.section >
