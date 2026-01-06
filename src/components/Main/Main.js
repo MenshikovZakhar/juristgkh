@@ -7,7 +7,7 @@ import Services from './Services/Services';
 import Orderwork from './Orderwork/Orderwork';
 import ScrollToTop from "react-scroll-to-top";
 import './Main.css';
-function Main({ onAppointment, onClose }) {
+function Main({ onAppointment, onClose, onAppointmen }) {
 
     return (
         <>
@@ -22,7 +22,7 @@ function Main({ onAppointment, onClose }) {
             />
             <main className='content'>
                 <ScrollToTop smooth className="scrolltop" viewBox="0 0 24 24" />
-                <Maintitle />
+                <Maintitle onAppointmen={onAppointmen} />
                 <Form />
                 <Services />
                 < Orderwork />

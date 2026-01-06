@@ -1,4 +1,4 @@
-import './CallPopup.css';
+import './OrderPopup.css';
 import { useState, useEffect } from 'react';
 import { send } from 'emailjs-com';
 import classNames from 'classnames';
@@ -10,7 +10,7 @@ import {
 } from '../../constants/index';
 import success from '../../images/success.png';
 import error from '../../images/error.png';
-function CallPopup({ isOpen, onClose, }) {
+function OrderPopup({ isOpen, onClose, }) {
     const classPopup = classNames(`popup`, {
         popup_opened: isOpen
     });
@@ -91,7 +91,7 @@ function CallPopup({ isOpen, onClose, }) {
                 (
 
                     <div className="modal-form__content">
-                        <h2 className="modal-form__title">Заказать звонок</h2>
+                        <h2 className="modal-form__title">Получить консультацию</h2>
                         <button
                             type="button"
                             className="modal-form__close"
@@ -130,10 +130,30 @@ function CallPopup({ isOpen, onClose, }) {
                                         />
                                         <span className="register__error auth__error">{errors.phone}</span>
                                     </div>
-
+                                    <div className="appointment-form__control">
+                                        <label className="appointment-form__label">Е-mail <span className="appointment-form__required">*</span></label>
+                                        <input
+                                            className="appointment-form__input appointment-form__input--email"
+                                            type="email"
+                                            name="email"
+                                            placeholder="example@example.com"
+                                            required
+                                            value={toSend.email || ''}
+                                            onChange={handleChange}
+                                            pattern="^\S+@\S+.\S+$"
+                                        />
+                                        <span className="register__error auth__error">{errors.email}</span>
+                                    </div>
                                 </li>
                                 <li className="appointment-form__item">
-
+                                    <div className="appointment-form__control">
+                                        <label className="appointment-form__label">Дополнительная информация</label>
+                                        <textarea
+                                            className="appointment-form__input appointment-form__input--text"
+                                            type="text"
+                                            name="info"
+                                        />
+                                    </div>
                                     <div class="footer-form__btn">
                                         <button
                                             type="submit"
@@ -154,4 +174,4 @@ function CallPopup({ isOpen, onClose, }) {
     );
 }
 
-export default CallPopup;
+export default OrderPopup;

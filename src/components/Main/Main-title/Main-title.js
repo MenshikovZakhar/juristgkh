@@ -28,7 +28,7 @@ const textAnimation = {
     }),
 }
 
-function Maintitle() {
+function Maintitle({ onAppointmen }) {
     return (
 
         <motion.section
@@ -40,7 +40,7 @@ function Maintitle() {
                 <motion.div custom={1} variants={titleAnimation} className="main-title__description-title">
                     <h1 className="description__title">«Юридическая помощь в сфере ЖКХ для физических и юридических лиц»
                     </h1>
-                    <button className="main-title__btn" type="button">
+                    <button onClick={onAppointmen} className="main-title__btn" type="button">
                         <span className="btn__text">Получить консультацию</span>
                     </button>
                 </motion.div>
