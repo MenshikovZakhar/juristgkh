@@ -29,10 +29,10 @@ function CallPopup({ isOpen, onClose, }) {
     const onSubmit = (e) => {
         e.preventDefault();
         send(
-            'service_ap6gpqg',
-            'template_ity9nob',
+            'service_jqb24ow',
+            'template_mlgutby',
             toSend,
-            'Z6le3YMDE9ovmwfTV'
+            '-LJby7CkMCeE2d5DF'
         )
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
@@ -107,14 +107,7 @@ function CallPopup({ isOpen, onClose, }) {
                             required
                         />
                         <span className="register__error auth__error">{errors.phone}</span>
-                        <textarea
-                            className='emailjs__textarea'
-                            type='text'
-                            name='message'
-                            value={toSend.message || ''}
-                            onChange={handleChange}
-                            placeholder='Укажите желаемый вид, оказываемых услуг, время и удобную для Вас дату'
-                        />
+
                         <button disabled={!isFormValid} type="submit"
                             className={`register__submit-button auth__submit-button ${isFormValid ? '' : 'auth__submit-button_disabled'}`}>
                             Отправить</button>
