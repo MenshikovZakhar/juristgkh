@@ -3,6 +3,8 @@ import Main from '../Main/Main';
 import { Routes, Route } from 'react-router-dom';
 import CallPopup from '../CallPopup/CallPopup';
 import OrderPopup from '../OrderPopup/OrderPopup';
+import AboutMe from '../AboutMe/AboutMe';
+import Contacts from '../Contacts/Contacts';
 import { useState } from 'react';
 function App() {
   const [isAppointmentpOpen, setAppointmentpOpen] = useState(false);
@@ -24,6 +26,8 @@ function App() {
     <div className='page'>
       <Routes>
         <Route path="/" element={<Main onAppointmen={handleAppointmen} onAppointment={handleAppointment} onClose={closePopupsMessage} />} />
+        <Route exact path='/about' element={<AboutMe onAppointment={handleAppointment} onClose={closePopupsMessage} />} />
+        <Route exact path='/contacts' element={<Contacts onAppointment={handleAppointment} onClose={closePopupsMessage} />} />
       </Routes>
       <CallPopup
         isOpen={isAppointmentpOpen}

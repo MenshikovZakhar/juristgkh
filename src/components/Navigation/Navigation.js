@@ -21,7 +21,13 @@ function Navigation() {
             <nav className='main-nav__inner'>
 
                 <ul class="main-nav__navbar">
-                    <NavLink className="main-nav__item main-nav__item--active" to='/'><p className="main-nav__link main-nav__link--active">Главная</p></NavLink>
+                    <li className="main-nav__item">
+                        <NavLink
+                            className={({ isActive }) =>
+                                isActive ? 'main-nav__link main-nav__link--active' : 'main-nav__link'
+
+                            } to='/'>Главная</NavLink>
+                    </li>
                     <NavLink className="main-nav__item main-nav__item--parent"><p className="main-nav__link">Услуги для физических лиц</p>
                         <ul class="main-nav__sub main-nav__sub--dropdown">
                             <li class="main-nav__item"><Link className="main-nav__link" to="/services_1">Абоненсткое обслуживание</Link></li>
@@ -39,10 +45,23 @@ function Navigation() {
                             <li class="main-nav__item"><Link className="main-nav__link" to="/services_1">Представление интересов в судах</Link></li>
                         </ul>
                     </NavLink>
-                    <NavLink className="main-nav__item" to='/about'><p className="main-nav__link">Обо&nbsp;мне</p></NavLink>
-                    <NavLink className="main-nav__item" to='/contacts'><p className="main-nav__link">Контакты</p></NavLink>
-                </ul>
 
+                    <li className="main-nav__item">
+                        <NavLink
+                            className={({ isActive }) =>
+                                isActive ? 'main-nav__link main-nav__link--active' : 'main-nav__link'
+
+                            } to='/about'>Обо&nbsp;мне</NavLink>
+                    </li>
+
+                    <li className="main-nav__item">
+                        <NavLink
+                            className={({ isActive }) =>
+                                isActive ? 'main-nav__link main-nav__link--active' : 'main-nav__link'
+
+                            } to='/contacts'>Контакты</NavLink>
+                    </li>
+                </ul>
             </nav>
         </>
     );

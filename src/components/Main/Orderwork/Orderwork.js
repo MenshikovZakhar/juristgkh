@@ -33,7 +33,8 @@ function Orderwork() {
                             <p className="stages__count">01</p>
                             <div className="stages__icon stages__icon--one"></div>
                             <h3 className="stages__title">Консультация</h3>
-                            <p className="stages__text">Изучение ситуации и проблемы доверителя</p>
+                            <p className="stages__text">Изучение ситуации и проблемы доверителя ознакомление с
+                                документами. </p>
                         </div>
                     </motion.li>
                     <motion.li custom={2} variants={Animation} className="stages__item">
@@ -41,14 +42,14 @@ function Orderwork() {
                             <p className="stages__count">02</p>
                             <div className="stages__icon stages__icon--two"></div>
                             <h3 className="stages__title">Заключение соглашения</h3>
-                            <p className="stages__text">Согласование условий и определение позиции по делу</p>
+                            <p className="stages__text">Согласование условий и определение позиции по делу. Индивидуальный подход</p>
                         </div>
                     </motion.li>
                     <motion.li custom={3} variants={Animation} className="stages__item">
                         <div className="stages__content fadeInRight wow animated animated" >
                             <p className="stages__count">03</p>
                             <div className="stages__icon stages__icon--three"></div>
-                            <h3 className="stages__title">Составление документов</h3>
+                            <h3 className="stages__title">Юридическая работа</h3>
                             <p className="stages__text">Подготовка документов и совершение необходимых действий</p>
                         </div>
                     </motion.li>
