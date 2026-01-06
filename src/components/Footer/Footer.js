@@ -1,7 +1,7 @@
 import './Footer.css'
 import { useState, useEffect } from 'react';
 import { send } from 'emailjs-com';
-
+import img from '../../images/footer-img.png';
 import { Preloader } from '../Preloader/Preloader';
 import {
     NOT_FOUND_MESSAGE,
@@ -106,7 +106,7 @@ function Footer({ onClose }) {
                                             <h2 className="content-title content-title--left footer-list__title">Контактная информация</h2>
                                             <ul className="footer-contacts">
                                                 <li className="footer-contacts__item">
-                                                    <a href="https://t.me/@zm681986" className="footer-contacts__item" target="_blank" rel="noreferrer">
+                                                    <a className="link__a" href="https://t.me/@zm681986" target='blank'>
 
                                                         <div className="contacts-link contacts-link--adress">
                                                             <div className="contacts-link__name">Мессенджер</div>
@@ -116,7 +116,7 @@ function Footer({ onClose }) {
                                                     </a>
                                                 </li>
                                                 <li className="footer-contacts__item">
-                                                    <a href="tel:89507357984" className="footer-contacts__item" target="_blank" rel="noreferrer">
+                                                    <a className="link__a" href="tel:89507357984">
                                                         <div className="contacts-link contacts-link--phone">
                                                             <div className="contacts-link__name">Телефон</div>
                                                             <a className="contacts-link__number" href="tel:89507357984">+7(950) 735-79-84</a>
@@ -132,11 +132,14 @@ function Footer({ onClose }) {
                                                 <li className="footer-contacts__item">
                                                     <div className="contacts-link contacts-link--time">
                                                         <div className="contacts-link__name">Режим работы</div>
-                                                        <div className="contacts-link__text">Пн-Пт с 10:00 до 21:00 Сб-Вс с 10:00 до 20:00 (по предварительной записи)</div>
+                                                        <div className="contacts-link__text">Пн-Пт с 10:00 до 21:00 <br></br> Сб-Вс с 10:00 до 20:00 <br></br>(по предварительной записи)</div>
                                                     </div>
+
                                                 </li>
                                             </ul>
-
+                                            <div className="footer-list__img">
+                                                <img className="footer-list__img" src={img} />
+                                            </div>
 
                                         </li>
                                         <li className="footer-list__item">

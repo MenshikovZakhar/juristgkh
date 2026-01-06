@@ -25,7 +25,7 @@ function Services() {
         <section className="main-services">
 
 
-            <h2 className="text-center">Виды юридических услуг</h2>
+            <h2 className="services__content-title">Виды юридических услуг</h2>
             <div className="nav nav-tabs tab-list">
 
                 <li className="nav-item tab-list__item">

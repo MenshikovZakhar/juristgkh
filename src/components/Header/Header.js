@@ -15,7 +15,7 @@ function Header({ onAppointment }) {
             <div className="header__content">
                 <a className="header__phone" href="tel:+79514840077">
                     <img className='header__logo-phone' src={phone} alt='logo' />
-                    <span className="header__text-phone">+7(951)484-00-77</span>
+                    <span className="header__text-phone">+7(950)735-79-84</span>
                 </a>
                 <Navigation />
             </div>

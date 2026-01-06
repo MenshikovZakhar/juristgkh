@@ -256,7 +256,6 @@
     justify-content: center;
     height: 100%;
     padding: 20px 30px !important;
-    padding-left: 70px !important;
     -webkit-transition: all .3s linear;
     -o-transition: all .3s linear;
     transition: all .3s linear;
@@ -347,4 +346,11 @@
 
 .tab-list__link.active {
     color: #fff !important;
+}
+
+.services__content-title {
+    font-size: 35px;
+    color: rgba(27, 30, 57, .85);
+    padding: 0px;
+    text-align: center;
 }
