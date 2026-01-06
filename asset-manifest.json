@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.fe07b49b.css",
-    "main.js": "./static/js/main.b78d652f.js",
+    "main.css": "./static/css/main.93ba8d81.css",
+    "main.js": "./static/js/main.6d2604ec.js",
     "static/js/453.c15c5bf5.chunk.js": "./static/js/453.c15c5bf5.chunk.js",
     "static/media/sud-8.png": "./static/media/sud-8.3d82249697097252164a.png",
     "static/media/logo.png": "./static/media/logo.99db9deb2e0acb924a02.png",
@@ -16,6 +16,7 @@
     "static/media/texture.jpg": "./static/media/texture.71c87859b9c0bfbc7517.jpg",
     "static/media/philosopher_bold_italic.eot": "./static/media/philosopher_bold_italic.e88fa16105e5247a4164.eot",
     "static/media/philosopher_bold_italic.ttf": "./static/media/philosopher_bold_italic.aabf68ea2cbf84b9ef2c.ttf",
+    "static/media/foto.jpg": "./static/media/foto.dea14aba9e5ba67d6eaa.jpg",
     "static/media/philosopher_bold_italic.svg": "./static/media/philosopher_bold_italic.73ffd5e3372215b472ad.svg",
     "static/media/footer-img.png": "./static/media/footer-img.aaf395b71b52defd1539.png",
     "static/media/philosopher_bold_italic.woff": "./static/media/philosopher_bold_italic.07b1c5757468f50b7bad.woff",
@@ -35,12 +36,12 @@
     "index.html": "./index.html",
     "static/media/menu.svg": "./static/media/menu.111cfc3a3545a9ff785c.svg",
     "static/media/close.svg": "./static/media/close.ad98de32e342afafa118.svg",
-    "main.fe07b49b.css.map": "./static/css/main.fe07b49b.css.map",
-    "main.b78d652f.js.map": "./static/js/main.b78d652f.js.map",
+    "main.93ba8d81.css.map": "./static/css/main.93ba8d81.css.map",
+    "main.6d2604ec.js.map": "./static/js/main.6d2604ec.js.map",
     "453.c15c5bf5.chunk.js.map": "./static/js/453.c15c5bf5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe07b49b.css",
-    "static/js/main.b78d652f.js"
+    "static/css/main.93ba8d81.css",
+    "static/js/main.6d2604ec.js"
   ]
 }
