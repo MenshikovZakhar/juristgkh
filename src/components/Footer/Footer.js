@@ -19,8 +19,8 @@ function Footer() {
                             <ul className="footer-contacts">
                                 <li className="footer-contacts__item">
                                     <div className="contacts-link contacts-link--adress">
-                                        <div className="contacts-link__name">Адрес</div>
-                                        <div className="contacts-link__text">123298, г.&nbsp;Москва, ул.&nbsp;3-я Хорошёвская, д.&nbsp;11, оф.&nbsp;1106</div>
+                                        <div className="contacts-link__name">Мессенджер</div>
+                                        <div className="contacts-link__text">Telegram</div>
                                     </div>
                                 </li>
                                 <li className="footer-contacts__item">
@@ -42,15 +42,13 @@ function Footer() {
                                     </div>
                                 </li>
                             </ul>
-                            <h3 className="footer-list__sub">Бесплатная предварительная консультация предоставляется в часы работы офиса</h3>
-                            <div className="footer-list__img">
-                                <img src="/wp-content/themes/orvin/img/bg/footer.png" alt="Контактная информация" />
-                            </div>
+
+
                         </li>
                         <li className="footer-list__item footer-list__item--form">
                             <div className="footer-form">
                                 <h2 className="content-title footer-form__title">Оставить заявку</h2>
-                                <form action="" method="post" className="appointment-form appointment-form__content" id="order-form">
+                                <form action="" method="post" className="appointment-form appointment-form__content">
                                     <ul className="appointment-form__list">
                                         <li className="appointment-form__item">
                                             <div className="appointment-form__control">

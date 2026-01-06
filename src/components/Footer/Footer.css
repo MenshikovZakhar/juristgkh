@@ -34,6 +34,7 @@
 .footer-list__item {
     width: 100%;
     padding: 0 !important;
+    list-style: none;
 }
 
 .appointment-form__list {
@@ -96,27 +97,21 @@
     width: 50%;
     margin-bottom: 20px;
     padding: 0 10px;
+    list-style: none;
 }
 
 .footer-contacts .contacts-link {
-    justify-content: flex-start;
+
     height: 100%;
-    padding: 20px;
-    padding-top: 70px;
+
     text-align: center;
-    border: 1px solid #c6c6c6;
+    list-style: none;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
 }
 
 .footer-contacts .contacts-link::before,
-.footer-contacts .contacts-link::after {
-    top: 20px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
+.footer-contacts .contacts-link::after {}
 
 .gallery__item--col-5 {
     width: 25%;
@@ -250,4 +245,107 @@
 
     margin: 0;
     padding: 0;
+}
+
+.footer-list__item--contacts {
+    padding-right: 40px;
+}
+
+.contacts-link {
+    position: relative;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 40px;
+    padding-left: 50px;
+    text-align: left;
+    white-space: nowrap;
+    color: #2c2c2c;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+}
+
+.contacts-link:hover {
+    color: #2c2c2c;
+}
+
+.contacts-link--adress,
+.contacts-link--time {
+    white-space: normal;
+}
+
+.contacts-link__text {
+    font-weight: 700;
+}
+
+.contacts-link::before {
+    position: absolute;
+    z-index: 1;
+
+    left: 0;
+    width: 40px;
+    height: 40px;
+    content: "";
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 40px auto;
+}
+
+.contacts-link--adress::before {
+    background-image: url("../../images/telegram.svg");
+}
+
+.contacts-link--phone::before {
+    background-image: url("../../images/phone-2.png");
+}
+
+.contacts-link--email::before {
+    background-image: url("../../images/email.png");
+}
+
+.contacts-link--time::before {
+    background-image: url("../../images/time.svg");
+}
+
+.contacts-link::after {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    content: "";
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto, cover;
+
+}
+
+
+
+.contacts-link__name,
+.contacts-link__number,
+.contacts-link__text {
+    color: #2c2c2c !important;
+}
+
+.contacts-link__name {}
+
+.contacts-link__number {
+    font-size: 1.2rem;
+    font-weight: 700;
 }
