@@ -6,11 +6,12 @@
 .catalog {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: 0;
-    padding: 0;
+    padding: 0 30px;
     justify-content: space-between;
     list-style: none;
 }
@@ -100,7 +101,8 @@
     object-fit: cover;
     object-position: center;
     width: 100%;
-    max-height: 300px;
+    height: 300px;
+    overflow: hidden
 }
 
 .catalog__info {
@@ -227,6 +229,7 @@
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
+    border: none;
 }
 
 .nav-tabs .nav-item {
