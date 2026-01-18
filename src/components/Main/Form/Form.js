@@ -29,8 +29,8 @@ function Form({ onAppointmen }) {
                 </p>
                 <p className="main-form__description-text"> Оставьте заявку и мы обязательно Вам поможем!</p>
             </motion.div>
-            <motion.button onClick={onAppointmen} custom={2} className="main-form__btn" type="button" variants={Animation}>
-                <span className="btn__text">Оставить заявку</span>
+            <motion.button onClick={onAppointmen} custom={2} className="main-form__btn form__btn" type="button" variants={Animation}>
+                <span className="btn__text btn__text-2">Оставить заявку</span>
             </motion.button>
         </motion.section >
     )

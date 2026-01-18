@@ -149,3 +149,101 @@
 .main-form__description {
     margin-top: 50px;
 }
+
+
+
+@media screen and (max-width: 1070px) {
+    .main-form__btn::before {
+        right: 35px;
+    }
+
+    .main-form__btn::after {
+        right: 20px;
+
+    }
+
+}
+
+
+@media screen and (max-width: 1030px) {
+    .btn__text {
+        padding-right: 50px;
+
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .form__btn {
+        width: 30%;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .form__btn {
+        width: 35%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .form__btn {
+        width: 40%;
+    }
+
+    .footer-info__title {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 490px) {
+
+    .form__btn {
+        width: 45%;
+    }
+
+    .main-form__description-text {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 490px) {
+
+    .form__btn {
+        width: 45%;
+    }
+
+    .main-form__description-text {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+    .form__btn {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .form__btn {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .form__btn {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .form__btn {
+        width: 65%;
+    }
+}

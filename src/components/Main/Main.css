@@ -18,3 +18,11 @@
     box-shadow: 0 9px 25px 0 rgb(132 128 177 / 28%);
     border: none;
 }
+
+@media screen and (max-width: 420px) {
+    .scroll-to-top {
+        width: 35px !important;
+        height: 35px !important;
+
+    }
+}

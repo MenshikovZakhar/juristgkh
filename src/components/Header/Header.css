@@ -152,3 +152,282 @@
     width: 100%;
     opacity: 1;
 }
+
+@media screen and (max-width: 1230px) {
+    .header__link {
+        width: 20%;
+    }
+
+    .header__title {
+        font-size: 25px;
+    }
+
+    .main-nav__link {
+        font-size: 15px;
+    }
+
+    .btn__text {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 1070px) {
+    .btn::before {
+        right: 35px;
+    }
+
+    .btn::after {
+        right: 20px;
+
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .btn::before {
+        right: 25px;
+    }
+
+    .btn::after {
+        right: 15px;
+
+    }
+
+
+
+    .header {
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+
+    .btn:hover::before {
+        right: 10px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .one {
+        order: 1;
+    }
+
+    .two {
+        order: 3;
+    }
+
+    .three {
+        order: 2;
+    }
+
+    .header__text-phone {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .header__logo-phone {
+        height: 60px;
+        width: 60px;
+    }
+
+    .header__text-phone {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .header__logo-phone {
+        height: 50px;
+        width: 50px;
+    }
+
+    .header__title {
+        font-size: 20px;
+    }
+
+    .header {
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .one {
+        order: 2;
+    }
+
+    .two {
+        order: 3;
+    }
+
+    .three {
+        order: 1;
+    }
+
+    .header__text-phone {
+        font-size: 25px;
+    }
+
+    .header__logo {
+        height: 80px;
+        width: 100px;
+        cursor: pointer;
+    }
+
+    .header__text-phone {
+        font-size: 18px;
+    }
+
+    .header__content {
+        justify-content: flex-start;
+    }
+
+
+    .header__phone {
+        bottom: 20px;
+        position: relative;
+    }
+
+    .header__logo-phone {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .header__text-phone {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header__logo {
+        height: 60px;
+        width: 80px;
+
+    }
+
+    .header__logo-phone {
+        height: 30px;
+        width: 30px;
+    }
+
+    .header__title {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 485px) {
+    .header__text-phone {
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width: 470px) {
+    .btn__text {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .header__logo {
+        height: 50px;
+        width: 70px;
+
+    }
+
+    .header__logo-phone {
+        height: 30px;
+        width: 30px;
+    }
+
+    .header__title {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .header__text-phone {
+        font-size: 13px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .header__logo-phone {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .one {
+        order: 1;
+    }
+
+    .two {
+        order: 3;
+    }
+
+    .three {
+        order: 2;
+    }
+
+    .header__text-phone {
+        font-size: 12px;
+    }
+
+    .header__title {
+        font-size: 14px;
+    }
+
+    .header__btn {
+        width: 50%;
+    }
+
+    .header {
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .header__logo-phone {
+        height: 35px;
+        width: 35px;
+    }
+
+    .header__title {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .header__text-phone {
+        font-size: 11px;
+    }
+
+    .header__text-phone {
+        font-size: 11px;
+    }
+
+
+}
+
+@media screen and (max-width: 350px) {
+    .header__text-phone {
+        font-size: 10px;
+    }
+
+    .header__logo-phone {
+        height: 30px;
+        width: 30px;
+    }
+
+    .header__btn {
+        width: 55%;
+    }
+}

@@ -8,18 +8,18 @@ function Header({ onAppointment }) {
 
     return (
         <header className='header'>
-            <Link to='/' className='header__link'>
+            <Link to='/' className='header__link one'>
                 <img className='header__logo' src={logo} alt='logo' />
                 <h1 className="header__title">ЮРИСТ&nbsp;ЖКХ</h1>
             </Link>
-            <div className="header__content">
+            <div className="header__content two">
                 <a className="header__phone" href="tel:+79514840077">
                     <img className='header__logo-phone' src={phone} alt='logo' />
                     <span className="header__text-phone">+7(950)735-79-84</span>
                 </a>
                 <Navigation />
             </div>
-            <button onClick={onAppointment} type="button" className="btn">
+            <button onClick={onAppointment} type="button" className="btn header__btn three">
                 <span className="btn__text">Заказать звонок</span>
             </button>
         </header>

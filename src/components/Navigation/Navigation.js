@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import './Navigation.css';
-
+import HiddenMenu from '../HiddenMenu/HiddenMenu';
 
 
 function Navigation() {
@@ -18,6 +18,11 @@ function Navigation() {
     return (
         <>
 
+            {toggle ? (
+                <div className='nav-menu__menu-adapt menu-toggler--main' onClick={onClickOpenMenu}></div>
+            ) : (
+                <HiddenMenu onClickCloseMenu={onClickCloseMenu} />
+            )}
             <nav className='main-nav__inner'>
 
                 <ul class="main-nav__navbar">

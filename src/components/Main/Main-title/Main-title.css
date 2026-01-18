@@ -155,3 +155,178 @@
     width: 100%;
     opacity: 1;
 }
+
+@media screen and (max-width: 1230px) {
+    .main-title__text {
+        transform: translate(15%, 0%);
+    }
+
+    .description__title {
+        margin: 50px 50px 50px 20px;
+    }
+
+}
+
+@media screen and (max-width: 1070px) {
+    .main-title__btn::before {
+        right: 35px;
+    }
+
+    .main-title__btn::after {
+        right: 20px;
+
+    }
+
+}
+
+@media screen and (max-width: 1030px) {
+    .main-title__btn::before {
+        right: 25px;
+    }
+
+    .main-title__btn::after {
+        right: 10px;
+
+    }
+
+    .main-title__btn:hover::before {
+        right: 10px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .main-title__btn {
+        width: 55%;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .main-title__description {
+        flex-direction: column;
+    }
+
+
+    .main-title {
+        width: 100%;
+        background-image: url(../../../images/img-3.jpg);
+        margin: 15px auto;
+        height: 829px;
+
+    }
+
+    .main-title__description {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .main-title:before {
+
+        width: 100%
+    }
+
+    .main-title__btn {
+        width: 30%;
+    }
+
+    .main-title__text {
+        transform: translate(15%, 20%);
+    }
+
+    .description__title {
+        margin: 30px auto;
+        text-align: center;
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 830px) {
+    .main-title__btn {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .main-title__btn {
+        width: 40%;
+    }
+
+    .main-title {
+        height: 700px;
+    }
+
+    .main-title__text {
+        transform: translate(15%, 10%);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-title__btn {
+        width: 45%;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .main-title__btn {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 490px) {
+    .main-title__btn {
+        width: 55%;
+    }
+
+    .main-title__text {
+        transform: translate(15%, 0%);
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .description__text {
+        font-size: 15px;
+
+    }
+
+    .description__title {
+        font-size: 20px;
+        margin: 20px auto;
+    }
+
+    .main-title {
+        height: 600px;
+    }
+
+
+}
+
+@media screen and (max-width: 410px) {
+    .main-title__btn {
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+    .main-title__btn {
+        width: 65%;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    .main-title__btn {
+        width: 70%;
+    }
+
+
+    .main-title {
+        height: 650px;
+
+    }
+}
