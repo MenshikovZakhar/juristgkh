@@ -106,13 +106,12 @@ function Footer({ onClose }) {
                                             <h2 className="content-title content-title--left footer-list__title">Контактная информация</h2>
                                             <ul className="footer-contacts">
                                                 <li className="footer-contacts__item">
-                                                    <a className="link__a" href="https://t.me/@zm681986" target='blank'>
+                                                    <a className="link__a" href="https://t.me/@mda_74" target='blank'>
 
                                                         <div className="contacts-link contacts-link--adress">
                                                             <div className="contacts-link__name">Мессенджер</div>
                                                             <div className="contacts-link__text">Telegram</div>
                                                         </div>
-
                                                     </a>
                                                 </li>
                                                 <li className="footer-contacts__item">
@@ -140,7 +139,6 @@ function Footer({ onClose }) {
                                             <div className="footer-list__img">
                                                 <img className="footer-list__img" src={img} />
                                             </div>
-
                                         </li>
                                         <li className="footer-list__item">
                                             <div className="footer-form">
@@ -218,13 +216,10 @@ function Footer({ onClose }) {
                                     </ul>
                                 </div>
                             </section>
-
                             <section className="footer-bottom">
-
                                 <div className="footer-bottom__left">
                                     <div className="copy">© 2026 jurist-gkh.ru</div>
                                 </div>
-
                             </section>
                         </div>
                     )

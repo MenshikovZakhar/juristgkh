@@ -6,6 +6,7 @@ import Footer from '../Footer/Footer';
 import Services from './Services/Services';
 import Orderwork from './Orderwork/Orderwork';
 import ScrollToTop from "react-scroll-to-top";
+import { NavLink, Link } from 'react-router-dom';
 import './Main.css';
 function Main({ onAppointment, onClose, onAppointmen }) {
 
@@ -22,6 +23,7 @@ function Main({ onAppointment, onClose, onAppointmen }) {
             />
             <main className='content'>
                 <ScrollToTop smooth className="scrolltop" viewBox="0 0 24 24" />
+
                 <Maintitle onAppointmen={onAppointmen} />
                 <Services />
                 <Form onAppointmen={onAppointmen} />

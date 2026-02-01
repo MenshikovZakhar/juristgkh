@@ -4,9 +4,7 @@ import './Servicesjuridical.css';
 import { Helmet } from 'react-v19-helmet-async';
 import ScrollToTop from "react-scroll-to-top";
 import sud8 from '../../images/sud-8.png';
-
 function Services_8({ onAppointment, onClose, onAppointmen }) {
-
     return (
         <>
             <Helmet>
@@ -32,8 +30,6 @@ function Services_8({ onAppointment, onClose, onAppointmen }) {
                         </div>
                     </div>
                 </section>
-
-
 
                 <section className="section section--page-item">
                     <div className="content-center">
@@ -64,8 +60,5 @@ function Services_8({ onAppointment, onClose, onAppointmen }) {
             <Footer onClose={onClose} />
         </>
     );
-
-
-
 }
 export default Services_8;
