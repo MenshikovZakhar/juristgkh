@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.5d16cd98.css",
-    "main.js": "./static/js/main.1e1fd618.js",
+    "main.js": "./static/js/main.22107ba3.js",
     "static/js/453.c15c5bf5.chunk.js": "./static/js/453.c15c5bf5.chunk.js",
     "static/media/sud-8.png": "./static/media/sud-8.3d82249697097252164a.png",
     "static/media/logo.png": "./static/media/logo.99db9deb2e0acb924a02.png",
@@ -39,11 +39,11 @@
     "index.html": "./index.html",
     "static/media/close.svg": "./static/media/close.ad98de32e342afafa118.svg",
     "main.5d16cd98.css.map": "./static/css/main.5d16cd98.css.map",
-    "main.1e1fd618.js.map": "./static/js/main.1e1fd618.js.map",
+    "main.22107ba3.js.map": "./static/js/main.22107ba3.js.map",
     "453.c15c5bf5.chunk.js.map": "./static/js/453.c15c5bf5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5d16cd98.css",
-    "static/js/main.1e1fd618.js"
+    "static/js/main.22107ba3.js"
   ]
 }
