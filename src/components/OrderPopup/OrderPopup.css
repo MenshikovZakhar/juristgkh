@@ -288,3 +288,29 @@
     text-align: center;
     margin: 10px 0px;
 }
+
+@media screen and (max-width: 410px) {
+    .emailjs__message {
+        width: 350px;
+
+    }
+
+    .emailjs__title_2 {
+        font-size: 20px;
+    }
+
+    .form__close {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .emailjs__message {
+        width: 310px;
+    }
+
+    .info-image {
+        margin-left: 100px;
+    }
+}
