@@ -10,7 +10,7 @@ function Services__juridical() {
 
             <ul className="catalog-jur">
                 <li className="catalog__item">
-                    <Link className="catalog__content" to="/services_1">
+                    <Link className="catalog__content" to="/services_7">
                         <div className="catalog__img">
                             <img src={sud7} />
                         </div>
@@ -26,7 +26,7 @@ function Services__juridical() {
                     </Link>
                 </li>
                 <li className="catalog__item">
-                    <Link className="catalog__content" to="/services_1">
+                    <Link className="catalog__content" to="/services_8">
                         <div className="catalog__img">
                             <img src={sud8} />
                         </div>
@@ -42,14 +42,14 @@ function Services__juridical() {
                     </Link>
                 </li>
                 <li className="catalog__item">
-                    <Link className="catalog__content" to="/services_1">
+                    <Link className="catalog__content" to="/services_9">
                         <div className="catalog__img">
                             <img src={sud9} />
                         </div>
                         <div className="catalog__info">
                             <h3 className="catalog__title">Проведение общих собраний собственников</h3>
                             <div className="catalog__mark">
-                                <p className="catalog__price"><span className="catalog__number">от20 000</span> руб.</p>
+                                <p className="catalog__price"><span className="catalog__number">от 20 000</span> руб.</p>
                             </div>
                             <div className="btn catalog__btn">
                                 <span className="btn__text">Подробнее</span>
@@ -58,7 +58,7 @@ function Services__juridical() {
                     </Link>
                 </li>
                 <li className="catalog__item">
-                    <Link className="catalog__content" to="/services_1">
+                    <Link className="catalog__content" to="/services_10">
                         <div className="catalog__img">
                             <img src={sud} />
                         </div>

@@ -25,7 +25,7 @@
 
 .services-title__btn {
     position: relative;
-    z-index: 1;
+    z-index: 0;
     display: block;
     padding: 0;
     cursor: pointer;
@@ -41,7 +41,7 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 1.2;
-    width: 30%;
+    width: 25%;
     margin: 20px auto;
 }
 
@@ -138,4 +138,73 @@
     padding-left: 40px;
     font-size: 2.5rem;
     color: rgba(27, 30, 57, .85);
+}
+
+@media screen and (max-width: 930px) {
+    .services-title__btn {
+        width: 30%;
+    }
+}
+
+
+@media screen and (max-width: 770px) {
+    .services-title__btn {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .services-title__btn {
+        width: 40%;
+    }
+
+    .services__title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .services-title__btn {
+        width: 45%;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+    .services-title__btn {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+    .services-title__btn {
+        width: 55%;
+    }
+
+    .services__title {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .services-title__btn {
+        width: 60%;
+    }
+
+    .services__title {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .services-title__btn {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .services-title__btn {
+        width: 70%;
+    }
 }

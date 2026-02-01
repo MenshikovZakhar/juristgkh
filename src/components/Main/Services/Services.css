@@ -414,6 +414,9 @@
         grid-template-columns: 1fr;
     }
 
+    .catalog-jur {
+        grid-template-columns: 1fr;
+    }
 
     .catalog__btn {
         width: 50%;
@@ -447,6 +450,10 @@
 
 @media screen and (max-width: 420px) {
     .catalog {
+        padding: 0 10px;
+    }
+
+    .catalog-jur {
         padding: 0 10px;
     }
 }

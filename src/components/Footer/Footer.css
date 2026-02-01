@@ -496,6 +496,7 @@
 
 .site-footer {
     position: relative;
+    z-index: 0;
 }
 
 @media screen and (max-width: 800px) {

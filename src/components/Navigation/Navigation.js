@@ -44,11 +44,11 @@ function Navigation() {
                         </NavLink>
                         <ul class="main-nav__sub main-nav__sub--dropdown">
                             <li class="main-nav__item"><Link className="main-nav__link" to="/services_1">Представление в судах</Link></li>
-                            <li class="main-nav__item"><Link className="main-nav__link" to="/services_1">Отмена судебного приказа</Link></li>
-                            <li class="main-nav__item"><Link className="main-nav__link" to="/services_1">Списание задолженности по ЖКХ</Link></li>
-                            <li class="main-nav__item"><Link className="main-nav__link" to="/services_1">Споры с управляющими компаниями и ТСЖ</Link></li>
-                            <li class="main-nav__item"><Link className="main-nav__link" to="/services_1">Написание запросов и претензий</Link></li>
-                            <li class="main-nav__item"><Link className="main-nav__link" to="/services_1">Оспаривание результатов ОСС</Link></li>
+                            <li class="main-nav__item"><Link className="main-nav__link" to="/services_2">Отмена судебного приказа</Link></li>
+                            <li class="main-nav__item"><Link className="main-nav__link" to="/services_3">Списание задолженности по ЖКХ</Link></li>
+                            <li class="main-nav__item"><Link className="main-nav__link" to="/services_4">Споры с управляющими компаниями и ТСЖ</Link></li>
+                            <li class="main-nav__item"><Link className="main-nav__link" to="/services_5">Написание запросов и претензий</Link></li>
+                            <li class="main-nav__item"><Link className="main-nav__link" to="/services_6">Оспаривание результатов ОСС</Link></li>
                         </ul>
                     </li>
                     <li className="main-nav__item main-nav__item--parent">
@@ -60,10 +60,10 @@ function Navigation() {
 
                         </NavLink>
                         <ul class="main-nav__sub main-nav__sub--dropdown">
-                            <li class="main-nav__item"><Link className="main-nav__link" to="/services_1">Абоненсткое обслуживание</Link></li>
-                            <li class="main-nav__item"><Link className="main-nav__link" to="/services_1">Взыскание задолженности за ЖКУ и капитальный ремонт</Link></li>
-                            <li class="main-nav__item"><Link className="main-nav__link" to="/services_1">Проведение общего собрания</Link></li>
-                            <li class="main-nav__item"><Link className="main-nav__link" to="/services_1">Представление интересов в судах</Link></li>
+                            <li class="main-nav__item"><Link className="main-nav__link" to="/services_7">Абоненсткое обслуживание</Link></li>
+                            <li class="main-nav__item"><Link className="main-nav__link" to="/services_8">Взыскание задолженности за ЖКУ и капитальный ремонт</Link></li>
+                            <li class="main-nav__item"><Link className="main-nav__link" to="/services_9">Проведение общего собрания</Link></li>
+                            <li class="main-nav__item"><Link className="main-nav__link" to="/services_10">Представление интересов в судах</Link></li>
                         </ul>
                     </li>
 

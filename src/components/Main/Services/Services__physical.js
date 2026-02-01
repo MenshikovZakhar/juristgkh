@@ -29,7 +29,7 @@ function Services__physical() {
                     </Link>
                 </li>
                 <li className="catalog__item">
-                    <Link className="catalog__content" to="/services_1">
+                    <Link className="catalog__content" to="/services_2">
                         <div className="catalog__img">
                             <img src={sud2} />
                         </div>
@@ -45,7 +45,7 @@ function Services__physical() {
                     </Link>
                 </li>
                 <li className="catalog__item">
-                    <Link className="catalog__content" to="/services_1">
+                    <Link className="catalog__content" to="/services_3">
                         <div className="catalog__img">
                             <img src={sud3} />
                         </div>
@@ -61,7 +61,7 @@ function Services__physical() {
                     </Link>
                 </li>
                 <li className="catalog__item">
-                    <Link className="catalog__content" to="/services_1">
+                    <Link className="catalog__content" to="/services_4">
                         <div className="catalog__img">
                             <img src={sud4} />
                         </div>
@@ -77,7 +77,7 @@ function Services__physical() {
                     </Link>
                 </li>
                 <li className="catalog__item">
-                    <Link className="catalog__content" to="/services_1">
+                    <Link className="catalog__content" to="/services_5">
                         <div className="catalog__img">
                             <img src={sud5} />
                         </div>
@@ -93,14 +93,14 @@ function Services__physical() {
                     </Link>
                 </li>
                 <li className="catalog__item">
-                    <Link className="catalog__content" to="/services_1">
+                    <Link className="catalog__content" to="/services_6">
                         <div className="catalog__img">
                             <img src={sud6} />
                         </div>
                         <div className="catalog__info">
                             <h3 className="catalog__title">Оспаривание результатов общих<br></br>собраний собственников МКД </h3>
                             <div className="catalog__mark">
-                                <p className="catalog__price"><span className="catalog__number">5 000</span> руб.</p>
+                                <p className="catalog__price"><span className="catalog__number">20 000</span> руб.</p>
                             </div>
                             <div className="btn catalog__btn">
                                 <span className="btn__text">Подробнее</span>

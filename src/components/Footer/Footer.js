@@ -119,14 +119,14 @@ function Footer({ onClose }) {
                                                     <a className="link__a" href="tel:89507357984">
                                                         <div className="contacts-link contacts-link--phone">
                                                             <div className="contacts-link__name">Телефон</div>
-                                                            <a className="contacts-link__number" href="tel:89507357984">+7(950) 735-79-84</a>
+                                                            <a className="contacts-link__number" href="tel:89507357984">+7(952)517-88-53</a>
                                                         </div>
                                                     </a>
                                                 </li>
                                                 <li className="footer-contacts__item">
                                                     <div className="contacts-link contacts-link--email">
                                                         <div className="contacts-link__name">E-mail</div>
-                                                        <a className="contacts-link__text" href="mailto:zm681986@mail.ru">zm681986@mail.ru</a>
+                                                        <a className="contacts-link__text" href="mailto:mechanismusiuris@mail.ru">mechanismusiuris@mail.ru</a>
                                                     </div>
                                                 </li>
                                                 <li className="footer-contacts__item">

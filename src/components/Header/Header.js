@@ -13,9 +13,9 @@ function Header({ onAppointment }) {
                 <h1 className="header__title">ЮРИСТ&nbsp;ЖКХ</h1>
             </Link>
             <div className="header__content two">
-                <a className="header__phone" href="tel:+79514840077">
+                <a className="header__phone" href="tel:+79525178853">
                     <img className='header__logo-phone' src={phone} alt='logo' />
-                    <span className="header__text-phone">+7(950)735-79-84</span>
+                    <span className="header__text-phone">+7(952)517-88-53</span>
                 </a>
                 <Navigation />
             </div>

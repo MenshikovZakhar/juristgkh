@@ -3,8 +3,8 @@ import Footer from '../Footer/Footer';
 import './Servicesphysical.css';
 import { Helmet } from 'react-v19-helmet-async';
 import ScrollToTop from "react-scroll-to-top";
+import sud from '../../images/sud.jpg';
 
-import foto from '../../images/foto.jpg';
 function Services_1({ onAppointment, onClose, onAppointmen }) {
 
     return (
@@ -56,7 +56,7 @@ function Services_1({ onAppointment, onClose, onAppointmen }) {
                             </div>
                             <div className="page-item__img">
 
-                                <img src={foto} />
+                                <img src={sud} />
                                 <div className="page-item__bg"></div>
                             </div>
                         </div>
